@@ -2,6 +2,13 @@
   <div class="row">
     <div class="col-md-3">
       <h2>Editing book</h2>
+      <%= form_with model:@book, local:true do |f| %>
+      <h2>title</h2>
+      <%= f.text_field:title %>
+      <h2>body</h2>
+      <%= f.text_area:body %>
+      <%= f.submit"Update Book" %>
+      <% end %>
     </div>
   </div>
 </div>
