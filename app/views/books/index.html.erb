@@ -26,6 +26,11 @@
       <div class:"create_book">
         <h2>Create Book</h2>
         <%= form_with model:@book, local:true do |f| %>
+        <p>Title</p>
+        <%= f.text_field:title %>
+        <p>Body</p>
+        <%= f.text_area:body %>
+        <%= f.submit "Create Book" %>
         <% end %>
       </div>
     </div>
